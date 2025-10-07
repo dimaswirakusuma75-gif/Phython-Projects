@@ -1,0 +1,32 @@
+# Kalkulator sederhana dengan if, elif, else
+
+print("=== Kalkulator Sederhana ===")
+print("Pilih operasi:")
+print("1. Penjumlahan (+)")
+print("2. Pengurangan (-)")
+print("3. Perkalian (*)")
+print("4. Pembagian (/)")
+
+# input angka
+angka1 = float(input("Masukkan angka pertama: "))
+angka2 = float(input("Masukkan angka kedua: "))
+operasi = input("Masukkan operasi (+, -, *, /): ")
+
+# percabangan
+if operasi == "+":
+    hasil = angka1 + angka2
+    print(f"Hasil: {angka1} + {angka2} = {hasil}")
+elif operasi == "-":
+    hasil = angka1 - angka2
+    print(f"Hasil: {angka1} - {angka2} = {hasil}")
+elif operasi == "*":
+    hasil = angka1 * angka2
+    print(f"Hasil: {angka1} * {angka2} = {hasil}")
+elif operasi == "/":
+    if angka2 != 0:
+        hasil = angka1 / angka2
+        print(f"Hasil: {angka1} / {angka2} = {hasil}")
+    else:
+        print("Error: Tidak bisa dibagi dengan nol!")
+else:
+    print("Operasi tidak valid.")
