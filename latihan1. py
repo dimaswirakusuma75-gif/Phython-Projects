@@ -1,0 +1,23 @@
+# Deklarasi Class
+class Siswa:
+    # Atribut class (sama untuk semua objek)
+    sekolah = "SMK PGRI 35 Solokanjeruk"
+
+    # Konstruktor
+    def __init__(self, nama, nis, kelas):
+        self.nama = nama
+        self.nis = nis
+        self.kelas = kelas
+
+    # Method untuk menampilkan profil siswa
+    def tampilkan_profil_siswa(self):
+        print(f"Nama   : {self.nama}")
+        print(f"NIS    : {self.nis}")
+        print(f"Kelas  : {self.kelas}")
+        print(f"Sekolah: {Siswa.sekolah}")
+
+# Membuat objek
+s1 = Siswa("Dimas", "112233", "XI RPL 3")
+
+# Menampilkan Method
+s1.tampilkan_profil_siswa()
